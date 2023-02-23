@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.center-h {
+  display: flex;
+  justify-content: center;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+}
+
+.header-link:active {
+  color: white;
+}
+.header-link:visited {
+  color: white;
+}
+
+.section-dashboard {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-contact-us {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-contact-us {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+
+.section-sign-up,
+.section-about-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.cards-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-grid > div {
+  width: 32%;
+}
+@media screen and (max-width: 767px) {
+  .cards-grid > div {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cards-grid > div {
+    width: 100%;
+  }
+}
+
+.cards-grid > div:not(:nth-child(3n + 0)) {
+  margin-right: 2%;
+}
+@media screen and (max-width: 767px) {
+  .cards-grid > div:not(:nth-child(3n + 0)) {
+    margin-right: 0;
+  }
+  .cards-grid > div:not(:nth-child(2n + 0)) {
+    margin-right: 4%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cards-grid > div:not(:nth-child(2n + 0)) {
+    margin-right: 0;
+  }
+}
+
+.cards-grid > div:nth-child(n + 4) {
+  margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .cards-grid > div:nth-child(n + 4) {
+    margin-top: 0;
+  }
+  .cards-grid > div:nth-child(n + 3) {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cards-grid > div:nth-child(n + 2) {
+    margin-top: 20px;
+  }
+}
+
+.card-img {
+  width: 100%;
+  height: 100px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-map__link {
+  color: #e96479;
+  text-decoration: none;
+}
+
+.google-map {
+  border: none;
+}
+
+.link-style-white {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sign-up-form {
+  width: 100%;
+  max-width: 300px;
+}
+@media screen and (max-width: 768px) {
+  .sign-up-form {
+    max-width: 100%;
+  }
+}
+
+.passion-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
