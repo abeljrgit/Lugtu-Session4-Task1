@@ -11,8 +11,7 @@ export default class App extends Component {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            {/* <Route path="/" element={<Dashboard />} /> */}
-            <Route path="/" element={<AboutUs />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/sign-up" element={<SignUp />} />
