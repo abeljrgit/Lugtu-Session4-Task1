@@ -1,1 +1,1 @@
-export * from 'PokemonApi';
+export * from './RestCountriesAPI';

@@ -1,9 +1,10 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import _ from 'lodash';
-import { restCountriesAll } from '../services/PokemonApi';
+
 import { Container } from '@mui/material';
 import { CountryCard } from '../components';
+import { restCountriesAll } from '../services';
 
 export class Dashboard extends Component {
   state = {
