@@ -12,11 +12,7 @@ export const Country = ({}) => {
     axios
       .get(`${restCountryByCode}/${params.country_code}`)
       .then((res) => {
-        // console.log(res.data);
-        // setResponseData(res.data[0].flags);
         setResponseData(res.data);
-        // console.log(res.data[0].flags);
-        // console.log(res.data[0].name);
       })
       .catch((err) => {
         console.log(err);
@@ -24,7 +20,8 @@ export const Country = ({}) => {
   }, []);
 
   return (
-    <section className="center-h section-about-us ">
+    <React.Fragment>
+      {/* <section className="center-h section-about-us "> */}
       <Container
         sx={{
           display: 'flex',
@@ -69,6 +66,7 @@ export const Country = ({}) => {
           </Box>
         </Card>
       </Container>
-    </section>
+      {/* </section> */}
+    </React.Fragment>
   );
 };
