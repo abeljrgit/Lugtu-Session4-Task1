@@ -12,7 +12,7 @@ export default class App extends Component {
           <Navbar />
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/:country_code" element={<Country />} />
+            <Route path="/country/:country_code" element={<Country />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/sign-up" element={<SignUp />} />

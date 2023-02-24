@@ -19,11 +19,19 @@ export class CountryCard extends Component {
           />
         </div>
         <Box sx={{ p: 2, mt: 'auto' }}>
-          <Link className="card-map__link" to={`/${this.props.country.cca2}`}>
+          {/* <Link
+            className="card-map__link"
+            to={`/country/${this.props.country.cca2}`}
+          > */}
+          <a
+            className="card-map__link"
+            href={`/country/${this.props.country.cca2}`}
+          >
             <Typography variant="h6">
               {this.props.country.name.common}
             </Typography>
-          </Link>
+          </a>
+          {/* </Link> */}
           <Typography
             variant="body1"
             sx={{ fontSize: 14 }}
