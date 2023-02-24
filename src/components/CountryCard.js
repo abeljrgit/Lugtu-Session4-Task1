@@ -1,5 +1,6 @@
 import { Box, Card, Typography } from '@mui/material';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export class CountryCard extends Component {
   render() {
@@ -18,7 +19,11 @@ export class CountryCard extends Component {
           />
         </div>
         <Box sx={{ p: 2, mt: 'auto' }}>
-          <Typography variant="h6">{this.props.country.name.common}</Typography>
+          <Link className="card-map__link" to={`/${this.props.country.cca2}`}>
+            <Typography variant="h6">
+              {this.props.country.name.common}
+            </Typography>
+          </Link>
           <Typography
             variant="body1"
             sx={{ fontSize: 14 }}
